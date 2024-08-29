@@ -1,4 +1,4 @@
-<h2 align="center"> Snort Intrusion Detection Lab </h2>
+<h2 align="center"> <img align="center" src="https://www.vectorlogo.zone/logos/snort/snort-icon.svg" alt="snort" width="35" height="35"/> Snort Intrusion Detection Lab </h2>
 SNORT is an open-source, rule-based Network Intrusion Detection and Prevention System (NIDS/NIPS). It has three main use models.
 
 - Sniffer Mode - Read IP packets and prompt them in the console application.
