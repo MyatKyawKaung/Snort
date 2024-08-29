@@ -103,7 +103,7 @@ Generate ICMP traffic to Snort listening interface 'ens33'
 
 ![image12](https://github.com/user-attachments/assets/919363cc-8a03-4bfa-9473-7cf92e802996)
 
-We can now see "ICMP Traffic Detected" logs from our Snort local.rules
+**We can now see "ICMP Traffic Detected" logs from our Snort local.rules**
 
 ![image13](https://github.com/user-attachments/assets/52813f77-0c68-449f-a44d-91bc3094182e)
 
