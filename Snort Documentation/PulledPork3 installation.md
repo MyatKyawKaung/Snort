@@ -76,11 +76,18 @@ sudo /usr/local/bin/pulledpork3/pulledpork.py -c /usr/local/etc/pulledpork3/pull
 ```
 nano /usr/local/snort/etc/snort/snort.lua
 ```
-![image12](https://github.com/user-attachments/assets/2c3ca882-5181-499b-8257-b60e93ff8a26)
+![image012](https://github.com/user-attachments/assets/bc196c29-9d10-48a1-a748-ec33e2e1367b)
 
 **You can check pulledpork rules you've installed by running**
 ```
 head -20 /usr/local/etc/rules/pulledpork.rules
 ```
 ![image13](https://github.com/user-attachments/assets/bdccb4f2-1705-415b-bc82-3fd9557a0559)
+
+Run snort to test the config
+
+```
+snort -c /usr/local/snort/etc/snort/snort.lua --plugin-path /usr/local/etc/so_rules/
+```
+![image14](https://github.com/user-attachments/assets/355da89f-afca-42d0-b9c4-2160304cfb6a)
 
