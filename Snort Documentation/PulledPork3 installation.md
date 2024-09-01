@@ -1,4 +1,4 @@
-![15](https://github.com/user-attachments/assets/65a10429-9e34-491f-bf83-cfcbb691e1a0)### PulledPork is a tool that is used to download snort or suricata rulesets, which are the latest rules files that snort/talos releases to ensure that your system can detect the latest attacks.
+### PulledPork is a tool that is used to download snort or suricata rulesets, which are the latest rules files that snort/talos releases to ensure that your system can detect the latest attacks.
 
 Start by obtaining the latest version of PulledPork3
 
@@ -106,6 +106,5 @@ nmap -A -T4 192.168.17.129
 **We can see Snort successfully detected the scanning activity**
 
 ![image17](https://github.com/user-attachments/assets/f9d5dc9d-fe16-4c4b-8f99-504d86d01d94)
-
 
 
