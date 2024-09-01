@@ -1,4 +1,4 @@
-### PulledPork is a tool that is used to download snort or suricata rulesets, which are the latest rules files that snort/talos releases to ensure that your system can detect the latest attacks.
+![15](https://github.com/user-attachments/assets/65a10429-9e34-491f-bf83-cfcbb691e1a0)### PulledPork is a tool that is used to download snort or suricata rulesets, which are the latest rules files that snort/talos releases to ensure that your system can detect the latest attacks.
 
 Start by obtaining the latest version of PulledPork3
 
@@ -90,4 +90,22 @@ Run snort to test the config
 snort -c /usr/local/snort/etc/snort/snort.lua --plugin-path /usr/local/etc/so_rules/
 ```
 ![image14](https://github.com/user-attachments/assets/355da89f-afca-42d0-b9c4-2160304cfb6a)
+
+Now let's start snort listening traffic on the interface **'ens33'** using pulledpork rules
+```
+snort -c /usr/local/snort/etc/snort/snort.lua --plugin-path /usr/local/etc/so_rules/ -i ens33 -A alert_fast
+```
+![image15](https://github.com/user-attachments/assets/54b1ca57-d1ca-4857-8497-affc7ef1f08b)
+
+Generate Scanning traffic from the Attack Machine
+```
+nmap -A -T4 192.168.17.129
+```
+![image16](https://github.com/user-attachments/assets/19daf916-495b-4f2f-b8e4-c783a7d27f9e)
+
+**We can see Snort successfully detected the scanning activity**
+
+![image17](https://github.com/user-attachments/assets/f9d5dc9d-fe16-4c4b-8f99-504d86d01d94)
+
+
 
